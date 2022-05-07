@@ -1,0 +1,85 @@
+@use './sass/abstracts/' as abs;
+
+.card {
+	padding: 1.5rem 2rem 2rem 2rem;
+	border-radius: 8px;
+
+	h1 { color: var(--clr-card-title-1); }
+	.subtle { color: var(--clr-card-subtle-1); }
+	.tagline { color: var(--clr-card-title-1); }
+	.review { color: var(--clr-card-text-1); }
+
+
+
+	&__header {
+		display: grid;
+		display: grid;
+
+		grid-template-columns: 2rem 1fr;
+		// grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+			'image name'
+			'image tag';
+		gap: 0 0.6875rem;
+		margin-bottom: 1rem;
+
+			img {
+				grid-area: image;
+				width: 1.75rem;
+				aspect-ratio: 1;
+				border-radius: 50%;
+				place-self: center;
+			}
+
+			h1 {
+				grid-area: name;
+				font-size: 0.8125rem;
+				font-weight: 500;
+				align-self: end;
+			}
+
+			p {
+				grid-area: tag;
+				font-size: 0.6875rem;
+				font-weight: 500;
+				align-self: start;
+			}
+	}
+
+	&__body {
+		.tagline {
+			font-size: 1.25rem;
+			font-weight: 600;
+			line-height: 1.2;
+			max-width: abs.rem(260);
+			margin-bottom: 1rem;
+		}
+
+		.review {
+			font-size: 0.8125rem;
+			letter-spacing: 0.02px;
+			line-height: 1.4;
+		}
+	}
+
+	&.purple {
+		background-color: var(--clr-card-bg-1);
+	}
+
+	&.gray {
+		background-color: var(--clr-card-bg-2);
+	}
+
+	&.dark {
+		background-color: var(--clr-card-bg-3);
+	}
+
+	&.light {
+		background-color: var(--clr-card-bg-4);
+
+		h1 { color: var(--clr-card-title-2); }
+		.subtle { color: var(--clr-card-subtle-2); }
+		.tagline { color: var(--clr-card-title-2); }
+		.review { color: var(--clr-card-text-2); }
+	}
+}

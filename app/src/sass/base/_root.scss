@@ -1,0 +1,42 @@
+@use '../abstracts/' as a;
+
+:root {
+
+	// colors
+	--clr-bg: hsl(210, 46%, 95%);
+
+	// Card background colors
+	--clr-card-bg-1: hsl(263, 55%, 52%);
+	--clr-card-bg-2: hsl(217, 19%, 35%);
+	--clr-card-bg-3: hsl(219, 29%, 14%);
+	--clr-card-bg-4: hsl(0, 0%, 100%);
+
+	// Card text colors
+	--clr-card-title-1: hsl(0, 0%, 100%);
+	--clr-card-text-1: hsl(0, 0%, 100%, 0.7);
+	--clr-card-subtle-1: hsl(0, 0%, 100%, 0.5);
+
+	--clr-card-title-2: hsl(219, 29%, 14%);
+	--clr-card-text-2: hsl(219, 29%, 14%, 0.7);
+	--clr-card-subtle-2: hsl(219, 29%, 14%, 0.5);
+
+
+	// font-families
+	--ff-sans: 'Barlow Semi Condensed', sans-serif;
+
+	// font-sizes from ../abstract/type
+	// Might need to add more breakpoints
+	// @each $screen-size, $font-size in a.$type-scale {
+	// 	@if $screen-size == small {
+	// 		@each $size, $value in $font-size {
+	// 			--fs-#{$size}: #{$value};
+	// 		}
+	// 	} @else {
+	// 		@include a.breakpoint(medium) {
+	// 			@each $size, $value in $font-size {
+	// 				--fs-#{$size}: #{$value};
+	// 			}
+	// 		}
+	// 	}
+	// }
+}

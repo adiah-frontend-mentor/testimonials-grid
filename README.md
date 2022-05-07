@@ -50,12 +50,31 @@ Used `npx create-react-app` to make the boilerplate for the react app. Then clea
 
 Added rules to deploy to gh-pages.
 
+Then I started working on the html markup. Thinking about the reusable components in this project, each of the testimonial cards
+has the same basic structure, with different, background colors, word colors and then the actual information.
+
+I'm thinking to create a card component and pass as props 
+* theme
+  * background-color
+  * text colors
+* data
+* position
+
+That way I can use the data to populate the card and use the theme as a class to have the stylings bundled in.
+
+The position can also be added as a class, for the grid layout to set the grid areas.
+
+Created custom component for a testimonial card since it's the only component I left it in the `src` folder.
+
+created a file to hold the data to be imported to the cards.
 
 ### What I learned
 
 ### Continued development
 
 I've heard about Vite instead of CRA to launch React apps as being much faster.
+
+When setting up the card text colors that are just different values of transparency, check on using some sass function to create it.
 
 ### Useful resources
 

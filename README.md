@@ -40,16 +40,22 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- React
 - SCSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 
+Used `npx create-react-app` to make the boilerplate for the react app. Then cleaned up the unused files.
+
+Added rules to deploy to gh-pages.
 
 
 ### What I learned
 
+### Continued development
 
+I've heard about Vite instead of CRA to launch React apps as being much faster.
 
 ### Useful resources
 

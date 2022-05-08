@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/testimonials-grid/static/css/main.be7848fb.css",
+    "main.css": "/testimonials-grid/static/css/main.bf66cbce.css",
     "main.js": "/testimonials-grid/static/js/main.579a826e.js",
     "index.html": "/testimonials-grid/index.html",
     "static/media/bg-pattern-quotation.svg": "/testimonials-grid/static/media/bg-pattern-quotation.6b460e30439432820da6.svg",
-    "main.be7848fb.css.map": "/testimonials-grid/static/css/main.be7848fb.css.map",
+    "main.bf66cbce.css.map": "/testimonials-grid/static/css/main.bf66cbce.css.map",
     "main.579a826e.js.map": "/testimonials-grid/static/js/main.579a826e.js.map"
   },
   "entrypoints": [
-    "static/css/main.be7848fb.css",
+    "static/css/main.bf66cbce.css",
     "static/js/main.579a826e.js"
   ]
 }

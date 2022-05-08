@@ -68,6 +68,8 @@ Created custom component for a testimonial card since it's the only component I 
 
 created a file to hold the data to be imported to the cards.
 
+Then I styled the component for mobile and then desktop using scss.
+
 ### What I learned
 
 ### Continued development
@@ -75,6 +77,8 @@ created a file to hold the data to be imported to the cards.
 I've heard about Vite instead of CRA to launch React apps as being much faster.
 
 When setting up the card text colors that are just different values of transparency, check on using some sass function to create it.
+
+I'd like the grid to automatically fit the testimonials into a position that suits its content.
 
 ### Useful resources
 

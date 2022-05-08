@@ -2,7 +2,7 @@ import './testimonial.scss';
 
 const Testimonial = ({data}) => {
   return (
-	<div className={`card ${data.theme}`}>
+	<div className={`card ${data.theme} ${data.position}`}>
 		<div className="card__header">
 			<img src={data.pic} alt={data.name} />
 			<h1>{data.name}</h1>

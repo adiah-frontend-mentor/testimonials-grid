@@ -4,6 +4,10 @@
 	padding: 1.5rem 2rem 2rem 2rem;
 	border-radius: 8px;
 
+	@include abs.breakpoint(medium) {
+		border-radius: 10px;
+	}
+
 	h1 { color: var(--clr-card-title-1); }
 	.subtle { color: var(--clr-card-subtle-1); }
 	.tagline { color: var(--clr-card-title-1); }
@@ -53,6 +57,10 @@
 			line-height: 1.2;
 			max-width: abs.rem(260);
 			margin-bottom: 1rem;
+
+			@include abs.breakpoint(medium) {
+				max-width: 100%;
+			}
 		}
 
 		.review {
@@ -82,4 +90,20 @@
 		.tagline { color: var(--clr-card-title-2); }
 		.review { color: var(--clr-card-text-2); }
 	}
+
+
+	&.one { 
+		grid-area: one; 
+		background-image: url(./images/bg-pattern-quotation.svg);
+		background-repeat: no-repeat;
+		background-position: top right 1.5rem;
+
+		@include abs.breakpoint(medium) {
+			background-position: top right 5rem;
+		}
+	}
+	&.two{ grid-area: two; }
+	&.three { grid-area: three; }	
+	&.four { grid-area: four; }	
+	&.five { grid-area: five; }
 }

@@ -6,4 +6,17 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @include abs.breakpoint(medium) {
+    padding-block: abs.rem(164);
+    margin-inline: auto;
+    max-width: abs.rem(1112);
+    display: grid;
+    gap: 1.5rem abs.rem(30);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      'one one two five'
+      'three four four five';
+  }
 }
